@@ -4,7 +4,7 @@
 int main()
 {
     //idade; sexo; salario
-    // media salario homi e muié
+    // media salario homi e muiÃ©
     //maior e menor idade
     // encerrar idade negativa
 
