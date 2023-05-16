@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void main() {
+    int num;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    if(num % 2 == 0) {
+        printf("%d é um número par.", num);
+    } else {
+        printf("%d é um número ímpar.", num);
+    }
+}

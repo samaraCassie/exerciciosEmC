@@ -16,8 +16,11 @@ int main()
         scanf("%f %f %f", &n1, &n2, &n3);
 
         media = (n1+n2+n3)/3;
-
-        if(media>=7 && media<=10)
+        if(media=10)
+        {
+            printf("Aprovado(a) com Distinção!\n Media: %.1f\n", media);
+        }
+        else if(media>=7 && media<10)
         {
             printf("Aprovado(a)\n Media: %.1f\n", media);
         }
