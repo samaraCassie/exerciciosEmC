@@ -18,24 +18,20 @@ int main()
    @samaraCassie
    */
 
+    int populacao_A = 80000;
+    double taxa_crescimento_A = 0.03;
 
-    int num, maior, menor;
+    int populacao_B = 200000;
+    double taxa_crescimento_B = 0.015;
 
-    printf("Insira 10 numeros inteiros.\n");
-    for(int i = 0; i < 10; i++){
-        scanf("%d", &num); 
-        if (i == 0){
-            maior = num;
-            menor = num;
-        }
-        else if (num > maior){
-        maior = num;
-        }
-        else if (num < menor){
-        menor = num;
-        }
+    int anos;
+
+    for (anos = 0; populacao_A < populacao_B; anos++) {
+        populacao_A += populacao_A * taxa_crescimento_A;
+        populacao_B += populacao_B * taxa_crescimento_B;
     }
-    printf("A maior num eh: %d\n", maior);
-    printf("E a menor eh: %d\n", menor);
-    printf("Diferenca: %d", maior - menor);
+
+    printf("Número de anos necessários: %d\n", anos);
+
+    return 0;
 }
