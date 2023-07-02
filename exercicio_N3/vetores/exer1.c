@@ -12,15 +12,16 @@ soma dos números e os valores do vetor.
 
 int main()
 {
-    int vet[4], sum=0;
+    int vet[5], sum=0;
 
-    for (int i = 0; i <= 4; i++){
+    for (int i = 0; i < 5; i++){
         printf("Insira um numero inteiro\n");
         scanf("%d", &vet[i]);
         sum+=vet[i];
     }
-    printf("A soma dos valores eh: %d\n", sum);
+    printf("-------------------------------");
+    printf("\n\nA soma dos valores eh: %d\n", sum);
     printf("\nVetor:\n [ ");
-    for(int i = 0; i <= 4; i++) printf("%d ", vet[i]); 
+    for(int i = 0; i < 5; i++) printf("%d ", vet[i]); 
     printf("]");   
 }
