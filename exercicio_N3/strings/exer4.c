@@ -56,7 +56,7 @@ int compareStrings(char S1[], char S2[]) {
     }
 }
 
-void substituiString(char S[]) {
+void replaceString(char S[]) {
     char newString[] = "catolica";
     int i = 0;
     while (newString[i] != '\0') {

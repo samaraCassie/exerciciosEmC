@@ -44,15 +44,15 @@ void replaceLetters(char string[]) {
 
 //(f) Calcule o tamanho preenchido do Vetor (Tamanho da palavra), percorrendo-a com FOR
 int calculateStringLength(char string[]) {
-    int sizeString = 0;
-    for (int i = 0; string[i] != '\0'; i++) sizeString++;
-    return sizeString;
+    int lengthString = 0;
+    for (int i = 0; string[i] != '\0'; i++) lengthString++;
+    return lengthString;
 }
 
 //(e) Exclua a última letra da palavra, utilizando caractere terminador (identifica o final da String)
 void removeLastLetter(char string[]) {
-    int sizeString = calculateStringLength(string);
-    if (sizeString > 0) string[sizeString - 1] = '\0';
+    int lengthString = calculateStringLength(string);
+    if (lengthString > 0) string[lengthString - 1] = '\0';
 }
 
 //(g) Leia (scanf) duas letras juntas (ex: “R4” em “BR4S1L”) e informe se encontrou ou não
@@ -83,11 +83,11 @@ int main() {
     convertToUppercase(string);
     replaceLetters(string);
 
-    int sizeString = calculateStringLength(string);
+    int lengthString = calculateStringLength(string);
     removeLastLetter(string);
-    sizeString = calculateStringLength(string);
+    lengthString = calculateStringLength(string);
     printf("%s\n", string);
-    printf("Tamanho da palavra: %d\n", sizeString);
+    printf("Tamanho da palavra: %d\n", lengthString);
 
     char letters[3];
     printf("Digite duas letras juntas (ex: 'R4'): ");
