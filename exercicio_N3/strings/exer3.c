@@ -96,7 +96,7 @@ int main() {
     int found = searchLetters(string, letters);
 
     if (found) printf("As letras foram encontradas na palavra.\n");
-    else printf("Letras nao encontradas na palavra.\n");
+    else printf("Letras NAO encontradas na palavra.\n");
 
     return 0;
 }

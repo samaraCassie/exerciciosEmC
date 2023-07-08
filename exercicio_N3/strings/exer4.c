@@ -81,12 +81,15 @@ void replaceString(char S[]) {
 int main() {
     char S[MAX];
     printf("Digite uma frase: ");
-    scanf("%s", &S[MAX]);
+    scanf("%s", &S);
+    for (int i = 0; i < MAX; i++) printf("%c", S[i]);
+    
 
     // (a) Busca por uma palavra ou parte dela
     char subString[MAX];
     printf("Digite uma palavra ou sub-string para buscar: ");
-    scanf("%s", &subString[MAX]);
+    scanf("%s", &subString);
+    for (int i = 0; i < MAX; i++) printf("%c", subString[i]);
     int search = searchSubstring(S, subString);
     if (search) {
         printf("A sub-string foi encontrada na frase.\n");
@@ -101,7 +104,7 @@ int main() {
     // (c) Comparar com uma segunda frase
     char segundaFrase[MAX];
     printf("Digite uma segunda frase para comparar: ");
-    scanf("%s", &segundaFrase[MAX]);
+    scanf("%s", &segundaFrase);
     int result = compareStrings(S, segundaFrase);
     if (result) {
         printf("As frases sao iguais.\n");

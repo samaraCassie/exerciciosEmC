@@ -16,9 +16,11 @@ int main(){
     for (int i = 0; i < 10; i++)
     {
         if (vetor[i] != '\0'){
-            if (vetor[i]!= 'a' && vetor[i]!= 'e' && vetor[i]!= 'i' && vetor[i]!= 'o' && vetor[i]!= 'u'){
-                soma++;
-                printf("consoantes: %c\n", vetor[i]);
+            if (vetor[i]>'a' && vetor[i]<'z'){
+                if (vetor[i]!= 'a' && vetor[i]!= 'e' && vetor[i]!= 'i' && vetor[i]!= 'o' && vetor[i]!= 'u'){
+                    soma++;
+                    printf("consoantes: %c\n", vetor[i]);
+                }
             }
         }
     }
